@@ -1,0 +1,40 @@
+Calvin Ko - Section B - Snake Project
+
+PROBLEM DESCRIPTION:
+For my final project, I created the game snake. The player controls the snake on screen with the arrowkeys,
+and the game ends upon hitting the window border or itself. The snake grows by one unit after eating a piece
+of food that is spawed randomly on the board. Scores are stored in a .txt file along with the name of the player,
+and the file is also used to track whether a new hiscore has been reached.
+
+PROGRAM DOCUMENTATION:
+- Once game loads in, press any arrow key to start the game
+- Use the arrow keys to control the direction of the snake
+- When it is game over the terminal will ask for your name
+- You can view your scores in the Scores.txt file
+If I had more time, I would have added sounds and display the score and hiscore on screen. I would also like to
+add a menu with a play button and instructions on how to play. I would also try to tidy up the movement and 
+hitboxes.
+
+DATA STRUCTURE:
+I used a vector/array for my project. I chose to use this instead of a linked list because I just needed the list
+to store the objects to draw, and I could go through the list and update positions as needed, and I felt that either
+data structure would have been used the same.
+
+TESTS:
+- you can't move in the opposite direction you are already travelling
+- spamming a single direction key doesn't change the direction if it is already travelling in that direction
+- all 4 walls end the game if the snake runs into it
+- the game ends if the snake runs into itself
+- hiscore is tracked properly when a new hiscore is created or displays the old hiscore if it isn't beaten
+- a new scores.txt file is created if one doesn't exist already
+
+REFLECTIONS:
+This project helped me to learn how to manipulate objects better and how to manipulate objects in a list.
+It also taught me which functions should go into which classes, and how you should organize your projects.
+I also learned that you might not think of everything that you need in the planning process of the project,
+which might make the project take longer than expected. Some problems that I encountered during the project
+were that I wasn't initializing data members, when the snake moved the body segments were following the head
+with both x and y coordinates instead of x or y, which allowed the snake to look curved, and I was including headers
+of two different files in each other, which didn't let the program compile. If I had to do a different project, 
+I would take more time to plan out what needs to go into the code, because I found myself adding a lot of things
+that I didn't think of before starting to code the project.
