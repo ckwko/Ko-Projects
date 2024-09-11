@@ -1,0 +1,830 @@
+commit 9c9a64cca04f796b63944b56f95f3a66bbc35e71
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Apr 18 14:58:52 2023 -0600
+
+    pushing up what we finished up in class
+
+commit 14cf9a2e4064ff88ba834b511a05405f1a3c9f5f
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Apr 18 13:11:38 2023 -0600
+
+    started implementing handling suggestions
+
+commit ad30d59a31ffec7495aa62cd823f4aaf4d17c756
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Apr 18 12:55:34 2023 -0600
+
+    removed duplicate cod ein the move character method and adjusted roll size to fit the game
+
+commit f90ba0846133c4d6345cb60fa9177cb7f591dc11
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Apr 18 12:41:38 2023 -0600
+
+    fixed major bug where player could move to any room on the board even if it was outside the range of rolling
+
+commit 2e641427660c34eb017b9338b1126aff91fea9dd
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Apr 18 12:31:34 2023 -0600
+
+    massively simplified loadSetupConfig
+
+commit 95ca14135285e78a1aae2f9a9efb4d66e6c229e7
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Apr 18 12:25:01 2023 -0600
+
+    removed unused commented out methods from CardPanel class
+
+commit cdb4b028ece56a5c52dc3e0f9fec93f551ab8942
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Apr 18 10:46:07 2023 -0600
+
+    added comments to many methods in the board class
+
+commit dc454ced86a0af6d6a459f35d57e1e7345173c6c
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Apr 18 10:42:04 2023 -0600
+
+    readded the unimplemented override methods to board class but moved to bottom. Extracted all logic for moving the computer player to a method in the board class so that the actionlistener can be simplified in the gamecontrolpanel
+
+commit 9e1f4ce91913306c2681d21edfa54bc7a6ac292a
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Apr 18 10:34:03 2023 -0600
+
+    moved all non getter and setter methods to the TOP of boardcell class
+
+commit 3934792c746158de3c75f6ab5a0da05d7700bf15
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Apr 18 10:31:37 2023 -0600
+
+    removed unncessasary, empty override methods in the board class
+
+commit 2e8b3d748b72fab1d00237d158067045960ad881
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Apr 18 10:28:52 2023 -0600
+
+    reorganized methods in the board class and refactored naming conventions
+
+commit f67f97f4af3aa9d1ad7d532750ade1709150eb31
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Apr 17 17:44:32 2023 -0600
+
+    Changed if else in drawDoor to switch case
+
+commit e38a261278716631dbd833b1ee18690c6e59e9bf
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Apr 17 17:39:11 2023 -0600
+
+    Changed if else in board drawing to switch case
+
+commit b4fdc5dd02cd98daf674c1c302a256b7c809a662
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Apr 17 17:23:04 2023 -0600
+
+    added changePlayerPos method to clean up validateMouseCoords method
+
+commit 79cfb3748216c42c90fc605dc43defd5a4ce1703
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Apr 17 17:10:18 2023 -0600
+
+    Removed updateCurrentPlayer() method and replaced with line using modulo
+
+commit d58732728428616e5af882deb5a19f0e19425373
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Apr 17 16:45:55 2023 -0600
+
+    added comments to some methods for clarification
+
+commit 1c6df930749630afec8aa068e91b4da3fa67969b
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Mon Apr 17 15:32:41 2023 -0600
+
+    made player moving even smoother! Room access is possible by clicking on any cell in the room, and a dialog pops up if the player has already moved
+
+commit a013552e4c31de0eb7752e95663411491f8ba7b9
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Mon Apr 17 15:20:12 2023 -0600
+
+    fixed some bugs with target finding with the human player
+
+commit dc5b8e955daf5ed0bd899f1d97e2473287a96282
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Mon Apr 17 14:59:02 2023 -0600
+
+    ummm, moving kind of works?
+
+commit e0c574ecf7635aa2ba9252986777c76fb32ea70b
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Mon Apr 17 14:37:56 2023 -0600
+
+    started implementing moving the other players. A bit buggy but still working
+
+commit d0af1565a01823716ea7b29e9222f8b010a66b92
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Mon Apr 17 13:26:01 2023 -0600
+
+    always draw doors last
+
+commit d89f2d6b8854d07b01e3546dc1422efbd0933fa4
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Sun Apr 16 20:56:41 2023 -0600
+
+    room now is fully colored if it is a valid target and game checks if player has made suggestion if in room
+
+commit 53ca701115bec44b79f0346503bf1e3a3f99f22f
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Sun Apr 16 20:30:11 2023 -0600
+
+    implemented player moving and targets disappearing after move
+
+commit 56f9472ee21e1241582de9f2289180b9a70f8151
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Sun Apr 16 19:08:26 2023 -0600
+
+    implemented displaying the targets when current turn is human
+
+commit 1391672610db907ed1c15a4bf5fd558ae66aad34
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Sun Apr 16 17:30:17 2023 -0600
+
+    fixed dice rolling method
+
+commit 6449621506d65860b9d716a02bb7691122bcf408
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Sun Apr 16 15:37:19 2023 -0600
+
+    created method to display targets on board
+
+commit 0342dae51981c0e19e91aa231cb049a788872932
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Apr 11 13:29:49 2023 -0600
+
+    started skeleton and filling out more details for right side of the flowchart
+
+commit 365ff11c38b0b37b7ff5d159df10e749c9b5dfe1
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Apr 11 10:48:14 2023 -0600
+
+    finisihed left hand side of flow chart
+
+commit e156945397db68d506a31796b22359130eb6fa3a
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Apr 11 10:12:21 2023 -0600
+
+    setup listening for pressing the next button
+
+commit 4b22cbac0834affe8e65416eb0d9b4f2179f7d06
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Apr 11 09:31:03 2023 -0600
+
+    added dialog box at start
+
+commit 8f9dcade8d9927f26fd21c4f6e29214f09b9f555
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Mon Apr 10 22:23:05 2023 -0600
+
+    added some comments for standards
+
+commit e5b569c3a7c5720703b90b3566b6bf5af1fdf2b0
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Mon Apr 10 22:21:35 2023 -0600
+
+    players and doorways are now drawn and changed color of labels and size of jframe
+
+commit 8fe50e6f0419a126137d9fa3219092b8bbf263a1
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Apr 10 21:24:57 2023 -0600
+
+    Fixed label positions and conflicts
+
+commit 88b801058ec0ee5629634999cf2adf70c10e4ac0
+Merge: 59e0d3d 0efc132
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Apr 10 21:13:49 2023 -0600
+
+    fixed conflicts
+
+commit 59e0d3d10d855f9d0eda4d65d096cab4f7aa1c14
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Apr 10 20:59:32 2023 -0600
+
+    Changed label locations and added window title
+
+commit 4b88ddeb925960c709248080612f15f4a12a1c60
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Apr 10 20:50:18 2023 -0600
+
+    Implemented label drawing
+
+commit 462fec5bc87406a85715d7c4995601e784707455
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Apr 10 19:16:44 2023 -0600
+
+    implemented paintComponent in Board.java and draw method for boardCell
+
+commit 0efc132afec227d7dbfa76eea5fbecab781d43d2
+Merge: 9694fb0 ee0926d
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Mon Apr 10 17:15:56 2023 -0600
+
+    merge conflicts
+
+commit 9694fb02434aeb9b0a7c1d64af4f60d4be67f71d
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Mon Apr 10 17:12:22 2023 -0600
+
+    started implementing drawing the individual squares but it is not quite working yet
+
+commit ee0926de0c5d5ae730c447a02348bf87ca979eb4
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Apr 10 16:54:46 2023 -0600
+
+    Removed BoardPanel file
+
+commit f9518576f200df81ab43eefb5df01af9c13609c4
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Apr 10 16:54:11 2023 -0600
+
+    Changed gui to JFrame instead of Jpanel
+
+commit 8d48b96f2f09295f3659d0498bfcc630105b76e7
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Mon Apr 10 16:03:20 2023 -0600
+
+    resaved
+
+commit ef4ddd0af79b08ca7da2d3dbe45c1b879198e49a
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Mon Apr 10 15:52:26 2023 -0600
+
+    started extracting stuff specific to the tiles into BoardPanel class
+
+commit 613e2cfc4689a9fcad3922ffef9ede146b5d37c6
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Fri Apr 7 13:56:41 2023 -0600
+
+    started to create the basis for boardgui but the layout of the different panels within are messed up
+
+commit 374866795db1b363feeb51ed59582e1c76038af5
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Thu Apr 6 13:37:42 2023 -0600
+
+    Created the right hand side GUI for displaying cards
+
+commit d752c968758beba9f39ce54a0759eada7fe3300b
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Apr 4 13:33:30 2023 -0600
+
+    started creating the GameControlPanel
+
+commit 05e4a576bc34e26698a9225f813c925d6e2420b6
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Tue Apr 4 11:43:41 2023 -0600
+
+    implemented selectTargets and successfully passed tests
+
+commit 0d2d6805dd8042013964c61d8ea59cc6e261eda7
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Tue Apr 4 00:38:12 2023 -0600
+
+    created failing test for selectTarget
+
+commit d3d6b032f61cffaca138faa44f7a9c088582ccd5
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Apr 3 23:44:56 2023 -0600
+
+    implemented handleSuggestions and successfully passed tests
+
+commit d4306b2f355f9a3d5090600675667f15f0403967
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Apr 3 22:38:17 2023 -0600
+
+    fixed empty updateSeen method and findUnseenCards
+
+commit b82979b98e2acfbb63f0712ada334698c73d08d6
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Apr 3 21:58:04 2023 -0600
+
+    fixed error in skeleton testCreateSuggestion
+
+commit e4ecbdcb4b3cb62d046d93a143745f9c59d1e44d
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Apr 3 21:41:56 2023 -0600
+
+    improved random test for testDisproveSuggestions
+
+commit 3864ed796ccd8678055b9c40d30bc47362c0ba41
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Apr 3 20:14:08 2023 -0600
+
+    created method to find unseen cards
+
+commit 1cdfa5941db2a434705d5ab42c7bfc8d862c27b8
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Apr 3 18:42:36 2023 -0600
+
+    implemented handleSuggestion and made tests pass successfully
+
+commit 2d5d767d5a77f827938a273b47d35042726156b1
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Apr 3 12:21:26 2023 -0600
+
+    created failing test testHandleSuggestions
+
+commit 348befcf0a12969e5e3b6f9baac3db6e950ca5a4
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Apr 3 10:12:44 2023 -0600
+
+    coded disproveSuggestion and successfully passed testDisproveSuggestion
+
+commit e73c04476bd37786b2c0c3921d4393dd1cda5ae7
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Sun Apr 2 22:51:02 2023 -0600
+
+    Created failing test for disproveSuggestion
+
+commit fefe50b10e9775b3d8cd2c981702f65bca06cb40
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Sun Apr 2 15:39:09 2023 -0600
+
+    Coded checkAccusation method and successfully passed tests
+
+commit 906e405e78f1ad8e8328962172aee5f28f438582
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Sun Apr 2 15:28:14 2023 -0600
+
+    Created testAccusation test and initialized card variables
+
+commit 3b0ad39183b97ec6819911ca2a9207a0a7e1be73
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Thu Mar 30 13:42:25 2023 -0600
+
+    skeleton to C21A
+
+commit 156fe057c3eab521f86c9e3cd0c18aed2fd8eba5
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Thu Mar 30 13:34:34 2023 -0600
+
+    all tests pass! Adjsuted tests as now certain spots are occupied which changes behaviour
+
+commit 437c090208c189e172325320f16554ee6edd7fcb
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Thu Mar 30 13:24:13 2023 -0600
+
+    Implemented dealing cards to different players and also adjusted the test as we rerealized what would be most effective
+
+commit fa45662cc5fc420010f765da7ee489b2a02a3807
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Thu Mar 30 12:45:40 2023 -0600
+
+    Unit test to confirm that each player has dealt cards and that their set of cards is unique
+
+commit b4fd997d4ac0ecb7bf717406ad37350236fc8def
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Thu Mar 30 12:33:06 2023 -0600
+
+    Implemented code such that a solution is created when board is initialized
+
+commit d07dc71f613ae743128fa5325e5a380921c2db18
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Thu Mar 30 10:38:27 2023 -0600
+
+    Test to confirm that a solution was chosen
+
+commit aa129f84d4c232bff8264566167c428c32c42ded
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Wed Mar 29 20:58:48 2023 -0600
+
+    Implemented the ability to generate a deck based on the gameSetup file
+
+commit 7c6de8ce3bbd85d8e89c99000d1e77ccce8963c0
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Wed Mar 29 18:25:45 2023 -0600
+
+    test for ensuring cards are properly loaded into a deck
+
+commit 43610dc296eba25fce015006ce16b2c5c3e24eac
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Wed Mar 29 18:10:47 2023 -0600
+
+    Added isHuman getter to the player class for testing - passes
+
+commit 20b73a423205c9d32fb39b1ef006768ab9e663f3
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Wed Mar 29 18:10:25 2023 -0600
+
+    test to confirm that there are 6 total characters, and 1 is a human
+
+commit 8885a47357ec7e3ce42c2da316d1b9f60ba2c2a2
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Wed Mar 29 18:06:37 2023 -0600
+
+    first test to test that cells are actually occupied passed
+
+commit d37293a3e4d483fe4a393bbe14f226d55b33e76e
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Mar 28 13:44:49 2023 -0600
+
+    started to add to the player classes
+
+commit c2a13bc7bab6d166c37b5e1af8f66b8fce38a9af
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Mar 28 13:38:29 2023 -0600
+
+    started implementing reading players in from ClueSetup
+
+commit f23a75bc30b1a356e1654c4a48fc23d7d734ab16
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Mar 28 13:29:49 2023 -0600
+
+    testPlayersLoaded test created
+
+commit 744904e8b023e00304eb9a600403ac5b1aedd0b2
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Mar 28 13:14:35 2023 -0600
+
+    Skeleton classes and adjusted cluesetup to include players and weapons
+
+commit 683f7e229189ea652090c009b36043e1f1dadc6e
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Mon Mar 27 20:21:16 2023 -0600
+
+    updated gitlog and diff.txt
+
+commit 5fcb8f6ce6dc962986b2c643d65ffe8c4ed15f35
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Mon Mar 27 20:09:12 2023 -0600
+
+    added doc comments to every method
+
+commit be951a33e4a574a34f6e939c839435e649ae1a3e
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Mon Mar 27 18:23:29 2023 -0600
+
+    created new class - boardInitializer, that extracts out all of the methods associated with loading the board. Makes the board class much smaller and cleaner, dividing between actual board stuff and loading the game
+
+commit fdb600ced5aa6d625b5fc75aa442dcf2b11a15f9
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Mon Mar 27 18:08:37 2023 -0600
+
+    reordered methods so that similar methods are placed together
+
+commit eee430fe5c0d0aac1825b2e5b9498381baad5a6d
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Mar 27 16:15:07 2023 -0600
+
+    moved part of calcAdjacencyMatrix to another method for easier readability and debugging
+
+commit 926550f6c2a42a8344fe8c8e687207c41d8eec6e
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Mar 27 15:42:28 2023 -0600
+
+    Split loadCellInformation into two methods for easier reading/debugging
+
+commit 78cb87a4891dfd27e77143ff8421c2c6aca05ab2
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Mar 27 11:43:19 2023 -0600
+
+    Removed setupSymbol map for redundancy
+
+commit 29daee966628007a957d1b711c64104fa77c73f8
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Mar 27 10:26:18 2023 -0600
+
+    merged instatiation of variables into one line to make code moreadable in Board.java
+
+commit a324460e28b934162b96a7b2d44c4c3469a02553
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Mar 27 10:16:50 2023 -0600
+
+    instatiated variables in one line to make code more readable
+
+commit 8d822e12a7a4b69f6167ac4651f4441af1aa57a0
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Sat Mar 11 19:48:42 2023 -0700
+
+    updating for coding standards
+
+commit 4966da724cdd2460f26909829a394e0bd2f06e0e
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Sat Mar 11 19:35:01 2023 -0700
+
+    all tests pass
+
+commit 199467d000635c85279342958509ba2e06671f52
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Sat Mar 11 19:07:09 2023 -0700
+
+    Fixed bug during board initialization where rows and columns are not read in correctly
+
+commit bff71c25ca58c157649de2cbff43126534b0d5cc
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Sat Mar 11 18:46:41 2023 -0700
+
+    Fixed bugs in BoardAdjTargetTest.java so tests run successfully
+
+commit a40994c33ab5880eb0f59c8f103fbe1d32982445
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Sat Mar 11 18:19:47 2023 -0700
+
+    FindAllTargets now accounts for if a room is occupied
+    :
+
+commit 263dff5790d7952f45efae9425dc7f2d3699ceb6
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Sat Mar 11 17:22:12 2023 -0700
+
+    fixed doorways!
+
+commit a256c942ee4f455797580ec7078e2c4acf44e204
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Sat Mar 11 16:45:25 2023 -0700
+
+     mad refactoring and finally testAdjacenciesRooms runs
+
+commit 86788b179b4dc98f58f1470f74d621574593e849
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Sat Mar 11 16:24:15 2023 -0700
+
+    everything is broken
+
+commit 9de26f67e63f3186a326039e5f47b0ea537e67a2
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Sat Mar 11 15:34:31 2023 -0700
+
+    continued to implement some stuff related to allowing doorways to be added to adjmatrix
+
+commit 0cc548fd80d4a9cbc49e99019019dff2ac6fc97d
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Sat Mar 11 14:32:33 2023 -0700
+
+    continued to work on adding doorway functionality
+
+commit 703486ff4c659558c748f3e48917c10395009521
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Sat Mar 11 13:12:25 2023 -0700
+
+    fixed determining whether a cell is a room or not
+
+commit 255e1a3c21b79c0c04d328913b8a0d287c8c312a
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Sat Mar 11 12:55:23 2023 -0700
+
+    large refactor and started with adjlist
+
+commit dbd27ae2939f99459cda370f2a546ed9b6e86828
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Mar 7 15:21:27 2023 -0700
+
+    small fixes to tests
+
+commit f486556daddc731f7563939a55551a6fcc0f27d4
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Mar 7 14:50:08 2023 -0700
+
+    finsihed targets tests
+
+commit a0acf7ca01020441685d1b3803d0b2a46d3e9c9b
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Mar 7 13:02:47 2023 -0700
+
+    finsihed adj tests
+
+commit 39eb8271583a78cf350a497311ef6639d31029db
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Mar 7 12:43:54 2023 -0700
+
+    fixed compilation exception error in Board and started creating boardadjtarget test
+
+commit 223db18cb7ea4f1a08ae66c907032b2bad4b680d
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Mar 7 12:29:55 2023 -0700
+
+    fixed compilation issue
+
+commit 897d177f2f1e8c30c6fd8bf4c6e0143584516640
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Mar 7 11:50:44 2023 -0700
+
+    more refactoring of board
+
+commit 3380250893c047ad1be451a711672dd561b7d51a
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Mar 7 11:27:15 2023 -0700
+
+    refactor room
+
+commit 4961a60d5f72c936b9022fa3cd3ce2d4c889aea4
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Mar 7 11:24:29 2023 -0700
+
+    refactor board cell
+
+commit 3316a45c5bfce08701bfd90fc11a656b2f244b3d
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Mar 7 11:20:30 2023 -0700
+
+    refactor Board
+
+commit d6b8b6691aa12a7a55e9a3494f610fa42cb848b9
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Mar 6 21:58:47 2023 -0700
+
+    board creation bug fixed, numRows is initialized each time
+
+commit 3dab6f25e10e3b941a90f9a02ede98dbb8a8082e
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Mar 6 21:55:02 2023 -0700
+
+    BadConfigFormatException added and exceptions caught
+
+commit 3e91ef4c27c4542d9ec53ddaa4a5a40df10b7af7
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Mar 6 20:09:23 2023 -0700
+
+    added code to set the secretPassage variable
+
+commit ba6a2e1b20edf07149ddf3f581a17b23df0adb27
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Mar 6 19:55:03 2023 -0700
+
+    fixed some skeleton code for BoardCell.java
+
+commit 45ce512b98d80d4ddceb59d28cd96163933b7f25
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Mar 6 19:36:05 2023 -0700
+
+    testDimensions passed
+
+commit 25f03b14c639a2a45edf623a8e3ec2bb6c10922e
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Mar 6 19:27:26 2023 -0700
+
+    roomMap and setupSymbols have been initialized and created, error fixed in calcAdjacencyMatrix
+
+commit 2740f8384cfadf866ba4bae9870945f84960dda8
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Sun Mar 5 22:26:05 2023 -0700
+
+    fixed major bugs
+
+commit 932b5f65a2b810c288de4f15232ae54a2a55ce76
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Sun Mar 5 22:00:36 2023 -0700
+
+    slowly making progress
+
+commit ac7688e7cd6fd79a758bba4311cc2c32b91457b2
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Sun Mar 5 21:18:17 2023 -0700
+
+    made some edits to how getting room symbols are done
+
+commit c02ca4c07f5738f5758ec124c38a521d96cf97de
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Sun Mar 5 20:51:31 2023 -0700
+
+    way more progress
+
+commit 4c228566879a2c4a71e35374c1c65a5e16049cd5
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Sun Mar 5 19:53:03 2023 -0700
+
+    continued to add layoutConfig file
+
+commit 8d8d485f4fc563c5f193adefe22740580b956701
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Sun Mar 5 19:42:01 2023 -0700
+
+    finished draft to layoutConfig
+
+commit 8d41f557006d81b1ab5d7efe32dd8cb7775ae4ec
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Sun Mar 5 19:23:41 2023 -0700
+
+    started loadSetupConfig
+
+commit 51a0ae7c85313d4c536b4362c0cf8895eaf0cc6b
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Sun Mar 5 18:52:14 2023 -0700
+
+    fixed the god forsaken import error that's taken me hours to debug
+
+commit dabd3474e84f848808204e68482a7f05d2d3d480
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Thu Mar 2 13:40:24 2023 -0700
+
+    added Test.txt and finished writing/fixing tests
+
+commit 734b495b0e9bfb8fe0f03693bcd1061590ad7f37
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Thu Mar 2 13:09:31 2023 -0700
+
+    started adding getters and setters so that tests pass. Added FileInitTest.java
+
+commit 09de3f84ef786562e4a24b7e10bf5a50727bac6a
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Thu Mar 2 12:48:43 2023 -0700
+
+    copied over test code and refactored a lot
+
+commit 2f86731903809f2d1719a6f02bf5a4d5e490a8c0
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Thu Mar 2 12:35:15 2023 -0700
+
+    added required configuration files
+
+commit 1a88391f02d71057ae758256142d996a0b9f8071
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Feb 28 18:59:15 2023 -0700
+
+    finished implementing calcTargets, findAllTargets, and fixing tests
+
+commit 7e3137704e34fb0af8e08e0f2564623aa069986e
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Feb 28 13:37:59 2023 -0700
+
+    added calcAdjacency list in each cell and calcAdjacancyMatrix in the board
+
+commit 199f67762aaa1ab7c07d245bc059ae648ad1980c
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Feb 28 12:44:19 2023 -0700
+
+    fixed testTargetsRoom
+
+commit 52492bae3b344de5f5d0f6599beadffb66211dbb
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Tue Feb 28 12:37:05 2023 -0700
+
+    fixed some test cases
+
+commit e4d80ebd64c2d012d0fb9b30d4bbd7ff8d78c529
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Feb 27 19:32:54 2023 -0700
+
+    Added minimum code for tests to fail in TestBoard.java
+
+commit b81f3bc8732c7cf4b1587b22430f2c09291cb903
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Feb 27 19:21:00 2023 -0700
+
+    Added other tests for testTargetsNormal
+
+commit 55eddf3e19c40a23c306625c0ecd0c7ee73b528c
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Feb 27 18:59:24 2023 -0700
+
+    Added second tests for Occupied and Mixed tests
+
+commit 6a53c428aaa827e1b72b72bf1c71e8ae1fbbde58
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Feb 27 18:34:27 2023 -0700
+
+    Added test for TestTargetsMixed
+
+commit 47f6e86d5dc30e48aa1b22dd7b472872804ff4b0
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Feb 27 18:09:50 2023 -0700
+
+    Added test for testTargetsOccupied
+
+commit 8060f833fe53f117695c105fdafc6c89dcc39ec5
+Author: ckwko <95715607+ckwko@users.noreply.github.com>
+Date:   Mon Feb 27 16:27:44 2023 -0700
+
+    Added test for testTargetsNormal
+
+commit 3b2b6896076ec6c67f757b9ff37e758e3c2f390f
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Mon Feb 27 15:22:44 2023 -0700
+
+    added testTargetsRoom
+
+commit b7a544530a9dd84df67d5561d0cf8c0719dad814
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Mon Feb 27 15:11:24 2023 -0700
+
+    added testAdjacency
+
+commit 89f504d9d31db7889ed65db01891760943e68f7b
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Mon Feb 27 13:03:22 2023 -0700
+
+    minor changes
+
+commit 8d7bcd202c7adc9c969fc17e57c3334ec98990ec
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Thu Feb 23 13:38:52 2023 -0700
+
+    started creating BoardTestsExp class
+
+commit 89a90bacaba2cc31d81ad32cc39b06fb547109f8
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Thu Feb 23 13:30:10 2023 -0700
+
+    created experimental classes TestBoard and TestBoardCell
+
+commit 9f7350b16e481a813ee6775544abd9bb8ba26501
+Author: Michael Pineiro <michaelpineiro.code@gmail.com>
+Date:   Thu Feb 23 12:54:03 2023 -0700
+
+    init

@@ -1,0 +1,48 @@
+diff --git a/bin/clueGame/Board.class b/bin/clueGame/Board.class
+index f6c6cdf..ca8153d 100644
+Binary files a/bin/clueGame/Board.class and b/bin/clueGame/Board.class differ
+diff --git a/src/clueGame/Board.java b/src/clueGame/Board.java
+index af8e177..f10f6de 100644
+--- a/src/clueGame/Board.java
++++ b/src/clueGame/Board.java
+@@ -315,33 +315,19 @@ public class Board extends JPanel implements MouseListener{
+ 		BoardCell newCell = getCell(mouseCellY, mouseCellX);
+ 		BoardCell oldCell = getCell(playerRow, playerCol);
+ 	
+-		Set<Character> roomsMoveable = new HashSet<Character>();
+-		for (BoardCell cell : targets) {
+-			if(cell.isRoom()) {
+-				roomsMoveable.add(cell.getInitial());
+-			}
+-		}
+-		
+ 		if(targets.contains(newCell)) { // if the cell is distinctly in the targets list
+ 				changePlayerPos(curPlayer, oldCell, newCell);
+ 				
+ 		} else if (newCell.isRoom()) { // if a cell is a room in the target list
+ 			char initial = newCell.getInitial();
+-			if (roomsMoveable.contains(initial)) {
+-				Room room = roomMap.get(initial);
+-				BoardCell centerCell = room.getCenterCell();
+-				
+-				changePlayerPos(curPlayer, oldCell, centerCell);
+-			} else {
+-				showInvalidMoveDialog();
+-			}
+-		} else {
+-			showInvalidMoveDialog();
++			Room room = roomMap.get(initial);
++			BoardCell centerCell = room.getCenterCell();
++			
++			changePlayerPos(curPlayer, oldCell, centerCell);
++		}
++		else {
++			JOptionPane.showMessageDialog(boardPanel, "Please select a valid target");
+ 		}
+-	}
+-	
+-	private void showInvalidMoveDialog() {
+-		JOptionPane.showMessageDialog(boardPanel, "Please select a valid target");
+ 	}
+ 	
+ 	/*

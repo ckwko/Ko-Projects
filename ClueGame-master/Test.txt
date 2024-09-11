@@ -1,0 +1,7 @@
+For the testRoomLabels, we just added all of our rooms and their names to the test to make 
+sure that they are being loaded. For testBoardDimensions, we just copied the code since it
+should just be returning whatever the variable we have is holding. For fourDoorDirections,
+we selected the door at the right of Medbay for our LEFT door, the door at Navigation for 
+our UP door, the door at Storage for our DOWN door, and the left door at Reactor for our 
+RIGHT door. To test the number of doorways we just went through the whole .csv file and 
+counted the number of doors that we had in the file.

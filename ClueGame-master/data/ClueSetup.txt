@@ -1,0 +1,27 @@
+// Rooms and room cards
+Room, Cafeteria, C
+Room, Storage, T
+Room, Medbay, M
+Room, Reactor, R
+Room, Navigation, N
+Room, Security, S
+Room, Electrical, E
+Room, Communications, O
+Room, Admin, A
+// Other spaces on the board
+Space, Unused, X
+Space, Walkway, W
+// Players
+Human, Red, 0, 7
+Computer, Blue, 0, 14
+Computer, Cyan, 0, 20
+Computer, Pink, 19, 6
+Computer, Yellow, 19, 15
+Computer, Orange, 9, 24
+// Weapons
+Weapon, Wrench
+Weapon, Pistol
+Weapon, Knife
+Weapon, Mouth
+Weapon, Hammer
+Weapon, Taser
