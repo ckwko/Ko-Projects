@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+  <link rel="stylesheet" href = "{{ url_for('static', filename='styles/accordionstylesheet.css' )}}">
+</head>
+
+<h1>Statistics</h1>
+<table>
+  <tr>
+    <th>Metric</th>
+    <th>Value</th>
+    <th>Description</th>
+  </tr>
+  {% for metric in overallStats %}
+    <tr>
+      <td>{{metric[0]}}</td>
+      <td>{{'%0.2f' | format(metric[1])}}</td>
+      <td>{{metric[2]}}</td>
+    </tr>
+  {% endfor %}
+</table>
+<button onclick="redirect()">Next page</button>
+<script>
+    function redirect() {
+      window.location.href = "{{url_for('end')}}"
+    }
+</script>
+
+</body>
+</html>

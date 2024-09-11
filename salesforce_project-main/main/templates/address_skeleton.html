@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name = "init_data" change_ids = "{{ change_ids|escape }}", cdropdown_ids ="{{ cdropdown_ids|escape }}", sdropdown_ids = "{{ sdropdown_ids|escape }}", clusters = "{{ clusters|escape }}">
+  <link rel="stylesheet" href = "{{ url_for('static', filename='styles/accordionstylesheet.css' )}}">
+</head>
+
+<body>
+
+  <h2>Review Address Placement</h2>
+  We have applied a general algorithm to group some of the remaining addresses by similarity.<br>
+  Please sort the remaining addresses individually, or in batches<br><br>
+
+  <input type="button" id="export" value="Export Settings" style="float: right;" onclick="exportSettings('settings.txt')">
+  
+  <div id="clusterText">clusters remaining</div>
+  <button id="tabCluster" class="accordion">Unsorted</button>
+  <div class="panel" id="panelCluster">
+    <table id = "clusterTable">
+    </table>
+  </div>
+  <br>
+  <div id="accordiongroup"></div>
+  <br><br>
+
+  <button onclick="redirect('statistics')">Next page</button>
+  <button id="nextPageAdmin" onclick="redirect('statistics')">Next page Admin</button>
+<br><br>
+  Search for sets of addresses to assist in the approval process.<br>
+  Spaces are considered not empty and the search is case sensitive.
+  Double click on a field above to auto-populate the search bar<br>
+  {% for message in get_flashed_messages() %}
+  <div class="notification">{{ message }}</div>
+  {% endfor %}
+  <form action="{{ url_for('address_approve') }}" method="post">
+    <input type="text" placeholder="Address" name="addsearch" id="addsearch">
+    <input type="text" placeholder="State" name="statesearch" id="statesearch">
+    <input type="text" placeholder="Country" name="countrysearch" id="countrysearch">
+    <input type="submit" value="Search">
+  </form>
+  {% if search_response %}
+  <br>
+  <div class="searchTable">
+    <table id="search_results_table">
+      <tr>
+        <th>Address</th>
+        <th>State</th>
+        <th>Country</th>
+      </tr>
+      {% for case in search_response %}
+        <tr>
+          <td>{{case[1]}}</td>
+          <td>{{case[2]}}</td>
+          <td>{{case[3]}}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  </div>
+  {% endif %}
+</body>
+<script type="text/javascript" src="/static/javascript/approval.js"></script>
+</html>
